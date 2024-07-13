@@ -1,0 +1,44 @@
+#app {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 1.9375rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+main {
+  overflow: auto;
+  padding-block: 5rem;
+  padding-inline: 8.125rem;
+}
+
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-top: 1.5rem;
+  
+}
+
+.aside-container {
+  height: 728px;
+  width: 400px;
+  background-image: url(../assets/images/Background\ \(4\).png);
+  background-size: contain;
+  padding-inline: 2rem;
+  padding-top: 2rem;
+}
+
+.text-aside {
+  margin-top: 1rem;
+
+  & span {
+    margin-top: .25rem;
+    font: var(--text-body-md);
+    color: #f9f9f9;
+  }
+
+}
