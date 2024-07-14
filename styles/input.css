@@ -34,22 +34,30 @@ input[type="date"] {
   & legend {
     margin-bottom: 12px;
   }
+
   & div {
     display: flex;
-    background-color: var(--input-base);
-    width: 272px;
-    border: 1px solid var(--input-stroke);
+    gap: 4px;
+    padding: 4px 5px;
+    background-color: #1C1F21;
+    color: #C8CDD0;
     border-radius: 8px;
+    width: fit-content;
+
+    & div {
+      width: 130px;
+
+    }
 
 
     & label {
 
-      gap: 8px;
-      padding-block: 12px;
-      padding-inline: 18px;
       display: flex;
-      align-items: center;
-      font: var(--text-body-sm);
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    cursor: pointer;
     }
 
   }
@@ -62,6 +70,54 @@ input[type="radio"] {
 
 
 
+.input-border {
+  border: 1px solid #363B40;
+
+}
 
 
+.input-button-presencial:has(input:checked), .input-button-online:has(input:checked)  {
+  transition: 50ms;
+  background-color: #2D3136;
+  & svg  path {
+    fill: #59B2FF;
+}
+}
+
+.input-textarea {
+  display: flex;
+  flex-direction: column;
+
+  & label {
+    font: var(--text-body-sm);
+    color: var(--text-body);
+    margin-bottom: 12px;
+  }
+
+  & textarea {
+    border-radius: .5rem;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font: var(--text-body-md);
+    color: var(--input-placeholder);
+  }
+
+  & textarea:active, textarea:focus {
+    outline: 1px solid #59B2FF;
+  }
+}
+
+
+input{
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font: var(--text-sm);
+    color: var(--semantic-error);
+    margin-top: .25rem;
+  }
+}
 

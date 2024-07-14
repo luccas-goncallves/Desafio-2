@@ -13,3 +13,8 @@
     }
   }
 }
+
+.grid-top {
+  display: grid;
+  gap: 1rem;
+}

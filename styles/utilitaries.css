@@ -6,5 +6,49 @@
 .legend-main-top {
   font: var(--text-heading-md);
   color: var(--text-heading);
+}
 
+.background-color-brand {
+  background-color: #59B2FF;
+}
+
+.background-color-navy {
+background-color: #6A59FF;
+
+}
+
+.background-color-purple {
+  background-color: #B259FF;
+}
+
+.background-color-fuschia {
+  background-color: #FF59F9;
+}
+
+.background-color-pink{
+  background-color: #FF598B;
+}
+
+.background-color-danger {
+  background-color: #FF5959;
+}
+
+.background-color-orange {
+  background-color: #FF8B59;
+}
+
+.background-color-yellow {
+  background-color: #FFCD59;
+}
+
+.background-color-lime {
+  background-color: #E1FF59;
+}
+
+.background-color-green {
+  background-color: #59FF91;
+}
+
+.background-color-cyan {
+  background-color: #59FFF9;
 }
