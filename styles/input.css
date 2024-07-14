@@ -1,0 +1,40 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+    & label {
+    font: var(--text-body-sm);
+    color: var(--text-body);
+  }
+  & input {
+    padding-block: .8rem;
+    padding-left: 1rem;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    font: var(--text-body-md);
+    color: var(--input-placeholder);
+  }
+
+  & input:active, & input:focus{
+    outline: 1px solid #59B2FF;
+  }
+}
+
+input[type="date"] {
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

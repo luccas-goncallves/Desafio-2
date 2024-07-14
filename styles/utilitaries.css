@@ -2,3 +2,9 @@
   font: var(--text-logo);
   color: #FF598B;
 }
+
+.legend-main-top {
+  font: var(--text-heading-md);
+  color: var(--text-heading);
+
+}
