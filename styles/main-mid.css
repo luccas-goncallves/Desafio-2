@@ -29,15 +29,18 @@
     display: flex;
     margin-top: 1rem;
     justify-content: space-between;
+
     
     & input {
       margin-left: 5px;
       z-index: 0;
-      width: 40px;
-      height:40px;
+      width: 20px;
+      height:20px;
       border-radius: 999px;
-      border: 8px solid var(--input-stroke);
       transition: 0.2s;
+      background-color: blue;
+      box-shadow: inset 0px 0px 0px 20px var(--input-stroke);
+      
 
     }
 
@@ -50,9 +53,48 @@
       outline: 2px solid #59B2FF;
 
     }
-
   }
 }
+
+
+.outside-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2D3136;
+  padding: 6px;
+
+
+}
+
+.inside-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.display-colors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-button:has(input:checked) {
+  & .outside-dot {
+    outline: 2px solid #59B2FF;
+    transition: 0s;
+  }
+}
+
+.radio-button:hover {
+  filter: brightness(125%);
+  transition: 0.2s;
+}
+
+.radio-button {
+  transition: 0.2s;
+}
+
+
 
 .input-radio-temas {
   margin-top: 28px;
@@ -67,9 +109,9 @@
 }
 
 .display-temas {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
 }
 
 .box-radio {
@@ -86,8 +128,8 @@
     background-color: var(--shape-button);
     border-radius: .5rem;
     transition: all 0.2s;
-    max-width: 134px;
-
+    padding-inline: 4px;
+    padding-top: 4px;
   }
 
   & label:hover {
@@ -100,25 +142,3 @@
     transition: 0s;
 }
 }
-
-
-/* Items */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: flex-start;
-align-content: flex-start;
-padding: 0px;
-gap: 8px;
-
-width: 560px;
-height: 325px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
