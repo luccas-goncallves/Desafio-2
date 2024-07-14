@@ -2,13 +2,14 @@
   margin-top: 2.5rem;
 
   & > div {
-    font: var(-text-heading-sm);
-    color: var(--text-heading);
+    font: var(--text-heading-sm);
+    color: #F9F9F9;
     display: flex;
     align-items: center;
     gap: .75rem;
     margin-bottom: 1.5rem;
 
+    & span {
+    }
   }
-
 }

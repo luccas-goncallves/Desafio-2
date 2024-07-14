@@ -27,10 +27,37 @@ input[type="date"] {
   }
 }
 
+.input-button {
+  display: flex;
+  flex-direction: column;
+
+  & legend {
+    margin-bottom: 12px;
+  }
+  & div {
+    display: flex;
+    background-color: var(--input-base);
+    width: 272px;
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
 
 
+    & label {
 
+      gap: 8px;
+      padding-block: 12px;
+      padding-inline: 18px;
+      display: flex;
+      align-items: center;
+      font: var(--text-body-sm);
+    }
 
+  }
+}
+
+input[type="radio"] {
+  appearance: none;
+}
 
 
 
