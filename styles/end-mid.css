@@ -1,0 +1,25 @@
+.end-mid {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;  
+
+  & > Legend {
+  display: flex;
+  gap: 12px;
+  font: var(--text-heading-sm);
+  color: var(--text-heading);
+  align-items: center;
+  }
+
+  & .input-end {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    & .input-phone {
+      margin-top: 16px;
+    }
+
+  }
+}

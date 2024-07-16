@@ -52,3 +52,26 @@ background-color: #6A59FF;
 .background-color-cyan {
   background-color: #59FFF9;
 }
+
+.estilo {
+  margin-bottom: 25px;
+  font: var(--text-body-sm);
+  color: var(--text-body);
+}
+
+.estilo-texto {
+  font: var(--text-body-md);
+  color: var(--text-body);
+}
+
+.text-body {
+  color: var(--text-body);
+}
+
+.text-heading {
+  color: var(--text-heading);
+}
+
+.font-body {
+  font: var(--text-body-sm);
+}

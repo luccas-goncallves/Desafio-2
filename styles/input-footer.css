@@ -1,0 +1,40 @@
+.box-footer {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 48px;
+  border-top: 1px solid var(--input-stroke);
+
+ & .box-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+ }
+}
+
+.input-submit {
+
+  display: flex;
+  justify-content: end;
+
+  & Input {
+    display: none;
+  }
+
+  & Label {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 20px;
+    padding-block: 14px;
+    background-color: var(--brand-dark);
+    border-radius: .5rem;
+    outline: none;
+    gap: 12px;
+    align-items: center;
+    font: var(--text-body-md);
+    color: var(--text-heading);
+    border: none;
+    width: 177px;
+  }
+}
